@@ -321,8 +321,58 @@ nav li a{
 }
 /* Choose Section End */
 
+/* Featured section Start */
+#featured{
+  padding: 88px 0;
+  margin: 0 88px;
+}
+.episodes-section h2{
+  font-size: 2.25rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.episodes-grid{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.episode-card{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(37, 13, 68, 1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.episode-card:hover{
+  transform: translateY(-5px);
+}
+.episode-content{
+  padding: 20px;
+}
+.episode-content h3{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.episode-content p{
+  font-size: 14px;
+  color: #b0a8b9;
+  margin-bottom: 15px;
+}
+.episode-content span{
+  color: #00FF88;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+/* Featured section End */
 
+/* Host Section Start */
 
+/* Host Section End */
 
 /* Footer Section Start */
 footer{
