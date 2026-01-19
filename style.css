@@ -244,3 +244,79 @@ nav li a{
 }
 
 /* About Section End */
+
+/* Choose Section Start */
+#choose-section{
+  padding: 120px 200px;
+  background-color: rgba(35, 14, 61, 1);
+}
+#choose-section .container{
+  max-width: 1200px;
+}
+.container h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* Card Grid */
+.feature-card{
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border: 1px solid rgba(53, 17, 101, 0.4);
+  transition: transform 0.3s;
+}
+.feature-card:hover{
+  transform: translateY(-5px);
+  border-color: #ff00ff;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.feature-card h3{
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+.feature-card p{
+  font-size: 14px;
+  color:#b0a8b9;
+}
+
+
+@media screen and (min-width: 993px) {
+  .features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-template-areas: 
+      "tall-card wide-card wide-card"
+      "tall-card wide-card2 wide-card2"
+      "wide-card3 wide-card3 small-card";
+  }
+  .feature-card:nth-child(1){
+    grid-area: tall-card;
+  }
+  .feature-card:nth-child(2){
+    grid-area: wide-card;
+  }
+  .feature-card:nth-child(3){
+    grid-area: wide-card2;
+  }
+  .feature-card:nth-child(4){
+    grid-area: wide-card3;
+  }
+  .feature-card:nth-child(5){
+    grid-area: small-card;
+  }
+
+  .feature-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+/* Choose Section End */
