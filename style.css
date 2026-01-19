@@ -45,12 +45,23 @@ body{
   font-weight: 600;  
   padding: 5px 20px;
   border-radius: 50px;
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   background: transparent;
   border: 1px solid #00ff9d;
   color: #00ff9d;
+  transition: all 0.3s ease;
+}
+.btn2:hover{
+  background-color: #00ff9d;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.6);
+  transform: translateY(-2px);
+}
+.btn2:hover img{
+  filter: brightness(0);
 }
 
 /* Main Styles */
@@ -189,3 +200,47 @@ nav li a{
 }
 
 /* Hero Section End */
+
+/* About Section Start */
+
+#about{
+  margin: 0px 200px 80px;
+  padding: 80px 0;
+  text-align: center;
+}
+.about-header{
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+.about-header h1{
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+.about-header p{
+  font-size: 1rem;
+  color: #b0a8b9;
+  margin-bottom: 16px;
+  line-height: 2.2;
+}
+.stats-container{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-item h1{
+  margin-bottom: 16px;
+  color: #00FF88;
+}
+.stat-item span{
+  color: #00FF88;
+}
+.stat-item p{
+  font-size: 1rem;
+  color: #b0a8b9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* About Section End */
