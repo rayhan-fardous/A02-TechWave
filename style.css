@@ -212,8 +212,8 @@ nav li a{
   max-width: 800px;
   margin: 0 auto 60px;
 }
-.about-header h1{
-  font-size: 3rem;
+.about-header h2{
+  font-size: 2.25rem;
   margin-bottom: 24px;
 }
 .about-header p{
@@ -230,6 +230,7 @@ nav li a{
   align-items: center;
 }
 .stat-item h1{
+  font-size: 2.8rem;
   margin-bottom: 16px;
   color: #00FF88;
 }
@@ -253,8 +254,8 @@ nav li a{
 #choose-section .container{
   max-width: 1200px;
 }
-.container h1{
-  font-size: 3rem;
+.container h2{
+  font-size: 2.25rem;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -326,7 +327,7 @@ nav li a{
   padding: 88px 0;
   margin: 0 88px;
 }
-.episodes-section h2{
+#featured h2{
   font-size: 2.25rem;
   margin-bottom: 40px;
   text-align: center;
@@ -371,6 +372,54 @@ nav li a{
 /* Featured section End */
 
 /* Host Section Start */
+#host{
+  max-width: 1200px;
+  padding: 40px 80px;
+  margin: 0 auto;
+}
+#host h2{
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2.25rem;
+}
+.host-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(37, 13, 68, 1);
+  padding: 40px;
+  border-radius: 40px;
+}
+.host-image-wrapper{
+  flex: 0 0 200px;
+  overflow: hidden;
+}
+.host-info{
+  flex: 1;
+}
+.host-info h3{
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.host-info p{
+  color: #b0a8b9;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 24px;
+}
+.social-icons{
+  display: flex;
+  gap: 15px;
+}
+.social-icons a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(165, 165, 165, 0.42);
+}
 
 /* Host Section End */
 
