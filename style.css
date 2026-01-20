@@ -109,6 +109,14 @@ nav li a{
 
 }
 
+.nav-toggle{
+  display: none;
+}
+.nav-toggle-label{
+  display: none;
+  cursor: pointer;
+}
+
 /* Navbar Styles End */
 
 /* Hero Section Start */
@@ -518,3 +526,111 @@ footer a{
   color: rgba(255, 255, 255, 0.4);
 }
 /* Footer Section End */
+
+
+/* Media Query For Low End Devices */
+@media screen and (max-width: 576px) {
+
+  #hero-section,
+  #about,
+  #choose-section,
+  #featured,
+  #host{
+    margin: 0 !important;
+    padding: 40px 20px;
+  }
+  
+  .container{
+    padding: 0 20px;
+  }
+  header{
+    padding: 15px 20px;
+  }
+  .logo{
+    font-size: 2.25rem;
+  }
+  nav{ 
+    padding: 0px 20px 20px;
+    
+  }
+  nav .btn{
+    display: none;
+  }
+  .nav-links{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+  }
+  .nav-toggle-label{
+    display: block;
+    width: 24px;
+  }
+  .nav-toggle-label img{
+    width: 100%;
+  }
+  .hero-circle{
+    max-width: 300px;
+  }
+  .hero-circle .circle-mic{
+    max-width: 90px;
+  }
+  .hero-buttons{
+    flex-wrap: wrap;
+  }
+  .hero-para{
+    font-size: 1.25rem;
+  }
+  .btn, .btn2{
+    font-size: 1.25rem;
+  }
+  #about{
+    margin-top: 10px;
+  }
+  #about p{
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+  .stats-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .container h2{
+    margin-bottom: 20px;
+  }
+
+  .features-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-card{
+    margin-bottom: 0;
+    grid-area: auto !important;
+  }
+  .feature-card h3{
+    font-size: 1.8rem;
+  }
+
+  .episodes-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .episode-card{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .video-container{
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .video-container iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
