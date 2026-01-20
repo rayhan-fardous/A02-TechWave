@@ -329,41 +329,38 @@ nav li a{
   color:#b0a8b9;
 }
 
-
-@media screen and (min-width: 993px) {
-  .features-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    grid-template-areas: 
-      "tall-card wide-card wide-card"
-      "tall-card wide-card2 wide-card2"
-      "wide-card3 wide-card3 small-card";
-  }
-  .feature-card:nth-child(1){
-    grid-area: tall-card;
-  }
-  .feature-card:nth-child(2){
-    grid-area: wide-card;
-  }
-  .feature-card:nth-child(3){
-    grid-area: wide-card2;
-  }
-  .feature-card:nth-child(4){
-    grid-area: wide-card3;
-  }
-  .feature-card:nth-child(5){
-    grid-area: small-card;
-  }
-
-  .feature-card{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
+.features-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  grid-template-areas: 
+    "tall-card wide-card wide-card"
+    "tall-card wide-card2 wide-card2"
+    "wide-card3 wide-card3 small-card";
 }
+.feature-card:nth-child(1){
+  grid-area: tall-card;
+}
+.feature-card:nth-child(2){
+  grid-area: wide-card;
+}
+.feature-card:nth-child(3){
+  grid-area: wide-card2;
+}
+.feature-card:nth-child(4){
+  grid-area: wide-card3;
+}
+.feature-card:nth-child(5){
+  grid-area: small-card;
+}
+
+.feature-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
 /* Choose Section End */
 
 /* Featured section Start */
@@ -724,5 +721,57 @@ footer a{
   
   .footer-bg img{
     object-position: center;
+  }
+}
+
+/* Media Query For Medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav{
+    padding: 20px 60px;
+  }
+  .hero-title{
+    font-size: 3rem;
+  }
+  .hero-circle{
+    max-width: 450px;
+  }
+  #about{
+    margin: 0 60px 60px;
+  }
+  .stats-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  #choose-section{
+    padding: 80px 60px;
+  }
+  .features-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-card{
+    grid-area: auto !important;
+  }
+  .episodes-grid{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .episode-card{
+    max-width: 45%;
+  }
+  .host-container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons{
+    justify-content: center;
+  }
+  .footer-content .logo{
+    font-size: 3rem;
+  }
+  .footer-socials{
+    max-width: 400px;
+    gap: 16px;
   }
 }
